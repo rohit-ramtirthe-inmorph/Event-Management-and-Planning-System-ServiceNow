@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>45a3aacd8344221012e66f60ceaad3f9</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>0ccd5cd183cc221012e66f60ceaad391</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>event_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>c9a3aacd8344221012e66f60ceaad3f9</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>80cd5cd183cc221012e66f60ceaad392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>event_date</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>41a3aacd8344221012e66f60ceaad3fa</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>08cd5cd183cc221012e66f60ceaad392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>c5a3aacd8344221012e66f60ceaad3fa</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>8ccd5cd183cc221012e66f60ceaad392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.end_split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>05a3eacd8344221012e66f60ceaad307</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>04cd5cd183cc221012e66f60ceaad393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.begin_split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>89a3eacd8344221012e66f60ceaad307</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>88cd5cd183cc221012e66f60ceaad393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>location</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>01a3eacd8344221012e66f60ceaad308</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>00cd5cd183cc221012e66f60ceaad394</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>85a3eacd8344221012e66f60ceaad308</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>84cd5cd183cc221012e66f60ceaad394</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -116,13 +116,27 @@
             <element>status</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 11:18:52</sys_created_on>
-            <sys_id>0da3eacd8344221012e66f60ceaad308</sys_id>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>0ccd5cd183cc221012e66f60ceaad394</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 11:18:52</sys_updated_on>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vip</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 20:12:23</sys_created_on>
+            <sys_id>80cd5cd183cc221012e66f60ceaad395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Information" display_value="Event Information" name="x_1610434_event_0_event_record" sys_domain="global" view="9a14d6c98304221012e66f60ceaad315">f8a3aacd8344221012e66f60ceaad36e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 20:12:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
