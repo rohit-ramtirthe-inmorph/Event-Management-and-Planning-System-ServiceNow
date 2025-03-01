@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="109ef9cd8380221012e66f60ceaad379" extends="task" label="Event Task" max_length="40" name="x_1610434_event_0_event_task" type="collection">
+        <element label="Task Name" mandatory="true" max_length="40" name="task_name" type="string"/>
+        <element label="Event Id" mandatory="true" max_length="32" name="event_id" reference="x_1610434_event_0_event_record" type="reference"/>
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Started" sequence="1" value="not_started"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+            </choice>
+        </element>
+    </element>
+</database>

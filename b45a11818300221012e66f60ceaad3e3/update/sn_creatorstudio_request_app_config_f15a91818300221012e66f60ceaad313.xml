@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_creatorstudio_request_app_config">
+    <sn_creatorstudio_request_app_config action="INSERT_OR_UPDATE">
+        <color>grouped-blue</color>
+        <icon>vacation-outline</icon>
+        <is_deleting>false</is_deleting>
+        <name>Event Management and Planning System</name>
+        <request_table>x_1610434_event_0_request</request_table>
+        <sys_class_name>sn_creatorstudio_request_app_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 05:58:37</sys_created_on>
+        <sys_id>f15a91818300221012e66f60ceaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Management and Planning System</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sn_creatorstudio_request_app_config_f15a91818300221012e66f60ceaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 05:58:37</sys_updated_on>
+    </sn_creatorstudio_request_app_config>
+</record_update>

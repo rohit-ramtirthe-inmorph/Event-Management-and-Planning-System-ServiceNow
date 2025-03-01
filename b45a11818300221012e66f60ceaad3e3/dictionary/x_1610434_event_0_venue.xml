@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="96004e0183c0221012e66f60ceaad374" extends="task" label="Venue" max_length="40" name="x_1610434_event_0_venue" type="collection">
+        <element label="Contact Number" mandatory="true" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element label="Venue Name" mandatory="true" max_length="40" name="venue_name" type="string"/>
+        <element label="Capacity" mandatory="true" max_length="40" name="capacity" type="integer"/>
+        <element label="Contact Person" mandatory="true" max_length="40" name="contact_person" type="string"/>
+    </element>
+</database>

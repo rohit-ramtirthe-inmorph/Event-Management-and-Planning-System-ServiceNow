@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2ca0464183c0221012e66f60ceaad38e" extends="task" label="Feedback" max_length="40" name="x_1610434_event_0_feedback" type="collection">
+        <element label="Attendee Id" max_length="32" name="attendee_id" reference="x_1610434_event_0_attendee" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" mandatory="true" max_length="1000" name="comment" type="string"/>
+        <element choice="1" label="Rating" mandatory="true" max_length="40" name="rating" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Average" sequence="2" value="average"/>
+                <element inactive_on_update="false" label="Excellent" sequence="0" value="excellent"/>
+                <element inactive_on_update="false" label="Good" sequence="1" value="good"/>
+                <element inactive_on_update="false" label="Poor" sequence="3" value="poor"/>
+            </choice>
+        </element>
+        <element label="Event Id" mandatory="true" max_length="32" name="event_id" reference="x_1610434_event_0_event_record" type="reference"/>
+    </element>
+</database>

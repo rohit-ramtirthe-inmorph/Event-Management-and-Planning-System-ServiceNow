@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Activity/Notes" section_id="516a9ac18344221012e66f60ceaad3f6" sys_domain="global" table="x_1610434_event_0_budget" version="3" view="Manager_View">
+    <sys_ui_section caption="Activity/Notes" section_id="516a9ac18344221012e66f60ceaad3f6" sys_domain="global" table="x_1610434_event_0_budget" version="3" view="manager_view">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_notes</element>
             <position>0</position>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <role display_value="x_1610434_event_0.event_manager" name="x_1610434_event_0.event_manager">90c0e5498300221012e66f60ceaad3fb</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 06:26:44</sys_created_on>
+        <sys_id>f9c02d498300221012e66f60ceaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>90c0e5498300221012e66f60ceaad3fb</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_embedded_help_role_f9c02d498300221012e66f60ceaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 06:26:44</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

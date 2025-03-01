@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="377f7d0183c0221012e66f60ceaad36e" extends="task" label="Budget" max_length="40" name="x_1610434_event_0_budget" type="collection">
+        <element label="Total Budget" mandatory="true" max_length="20" name="total_budget" type="currency"/>
+        <element label="Amount Spent" mandatory="true" max_length="20" name="amount_spent" type="currency"/>
+        <element label="Event Id" mandatory="true" max_length="32" name="event_id" reference="x_1610434_event_0_event_record" type="reference"/>
+        <element label="Amount Remaining" mandatory="true" max_length="20" name="amount_remaining" type="currency"/>
+    </element>
+</database>

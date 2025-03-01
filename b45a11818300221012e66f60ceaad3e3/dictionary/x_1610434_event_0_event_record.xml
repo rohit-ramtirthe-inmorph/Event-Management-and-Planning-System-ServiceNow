@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="05d2b9cd8340221012e66f60ceaad399" extends="task" label="Event Record" max_length="40" name="x_1610434_event_0_event_record" type="collection">
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="2" value="scheduled"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Planned" sequence="1" value="planned"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="VIP" max_length="40" name="vip" type="boolean"/>
+        <element label="Event Date" mandatory="true" max_length="40" name="event_date" type="glide_date_time"/>
+        <element label="Contact Person" mandatory="true" max_length="40" name="contact_person" type="string"/>
+        <element label="Email" mandatory="true" max_length="40" name="email" type="email"/>
+        <element label="Event Name" mandatory="true" max_length="40" name="event_name" type="string"/>
+        <element label="Contact Number" mandatory="true" max_length="40" name="contact_number" type="phone_number_e164"/>
+    </element>
+</database>
