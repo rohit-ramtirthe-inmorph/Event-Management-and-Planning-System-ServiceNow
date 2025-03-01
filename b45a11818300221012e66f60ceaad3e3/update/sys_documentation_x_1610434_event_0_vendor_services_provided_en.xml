@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="services_provided" label="Services Provided" language="en" table="x_1610434_event_0_vendor">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>services_provided</element>
+            <help/>
+            <hint/>
+            <label>Services Provided</label>
+            <language>en</language>
+            <name>x_1610434_event_0_vendor</name>
+            <plural>Services Provided</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 10:17:00</sys_created_on>
+            <sys_id>a675d24d8304221012e66f60ceaad321</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Services Provided</sys_name>
+            <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+            <sys_update_name>sys_documentation_x_1610434_event_0_vendor_services_provided_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 10:17:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

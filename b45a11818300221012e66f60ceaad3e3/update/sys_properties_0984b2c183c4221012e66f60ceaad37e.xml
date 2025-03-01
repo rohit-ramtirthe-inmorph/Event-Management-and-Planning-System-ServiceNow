@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Feedback activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_1610434_event_0_feedback_activity.fields</name>
+        <read_roles/>
+        <suffix>x_1610434_event_0</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 12:32:36</sys_created_on>
+        <sys_id>0984b2c183c4221012e66f60ceaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>glide.ui.x_1610434_event_0_feedback_activity.fields</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_properties_0984b2c183c4221012e66f60ceaad37e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 13:55:36</sys_updated_on>
+        <type>string</type>
+        <value>number,event_id,attendee_id,rating,work_notes_list,sys_updated_on,sys_updated_by,sys_created_on,sys_created_by,work_notes</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0984b2c183c4221012e66f60ceaad37e"/>
+</record_update>

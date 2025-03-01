@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 08:45:27</sys_created_on>
+        <sys_id>2980868183c0221012e66f60ceaad375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1610434_event_0_schedule.x_1610434_event_0.event_admin</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_security_acl display_value="x_1610434_event_0_schedule">e180868183c0221012e66f60ceaad372</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2980868183c0221012e66f60ceaad375</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 08:45:27</sys_updated_on>
+        <sys_user_role display_value="x_1610434_event_0.event_admin" name="x_1610434_event_0.event_admin">64d069c18300221012e66f60ceaad3fe</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

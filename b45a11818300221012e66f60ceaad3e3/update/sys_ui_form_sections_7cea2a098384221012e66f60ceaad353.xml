@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="7cea2a098384221012e66f60ceaad353" sys_domain="global" table="x_1610434_event_0_vendor" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:50:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49ea2a098384221012e66f60ceaad356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1610434_event_0_vendor" name="x_1610434_event_0_vendor" sys_domain="global" view="7a241ac98304221012e66f60ceaad354">7cea2a098384221012e66f60ceaad353</sys_ui_form>
+            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="7a241ac98304221012e66f60ceaad354">f4ea2a098384221012e66f60ceaad352</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:50:33</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:50:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05ea2a098384221012e66f60ceaad357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1610434_event_0_vendor" name="x_1610434_event_0_vendor" sys_domain="global" view="7a241ac98304221012e66f60ceaad354">7cea2a098384221012e66f60ceaad353</sys_ui_form>
+            <sys_ui_section caption="Activity/Notes" display_value="Activity/Notes" name="x_1610434_event_0_vendor" sys_domain="global" view="7a241ac98304221012e66f60ceaad354">70ea2a098384221012e66f60ceaad353</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:50:33</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1610434_event_0_vendor</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:50:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7cea2a098384221012e66f60ceaad353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1610434_event_0_vendor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+            <sys_update_name>sys_ui_form_sections_7cea2a098384221012e66f60ceaad353</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:50:32</sys_updated_on>
+            <sys_user/>
+            <view display_value="Coordinator View" name="Coordinator_View">7a241ac98304221012e66f60ceaad354</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
