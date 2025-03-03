@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Welcome msg</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   g_form.addInfoMessage("Welcome to the Event Record form!");
+
+   if(!g_form.isNewRecord()){
+		var _eventSysId = g_form.getUniqueValue();
+
+		var _eventGAjax = new GlideAjax('EventUtilsCS');
+		_eventGAjax.addParam('sysparm_name', 'getEventDetails');
+		_eventGAjax.addParam('sysparm_eventId', _eventSysId);
+
+		_eventGAjax.getXMLAnswer(function(response){
+			response = JSON.parse(response);
+			g_form.addInfoMessage(
+				"The event '"+response.eventName+"' is "+((response.vip==true)? 'an VIP':'not an VIP')+" and date is: "+response.eventDate+"."
+			);
+		});
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 10:58:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bc130f98304621012e66f60ceaad31c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Welcome msg</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_client_4bc130f98304621012e66f60ceaad31c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:12:14</sys_updated_on>
+        <table>x_1610434_event_0_event_record</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

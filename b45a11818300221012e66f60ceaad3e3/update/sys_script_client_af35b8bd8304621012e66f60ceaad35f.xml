@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>rating</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Thank You Message for Rating</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var rating = g_form.getValue('rating');
+
+    g_form.clearMessages();
+
+    switch (rating) {
+        case 'excellent':
+            g_form.addInfoMessage("Thank you for the excellent rating! We’re thrilled you had a great experience.");
+            break;
+        case 'good':
+            g_form.addInfoMessage("Thank you for the positive feedback! We're glad you’re satisfied.");
+            break;
+        case 'average':
+            g_form.addInfoMessage("Thank you for your feedback! We’ll keep working to improve.");
+            break;
+        case 'poor':
+            g_form.addInfoMessage("We appreciate your honesty. We’re sorry we didn’t meet your expectations — we’ll do better!");
+            break;
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 11:15:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af35b8bd8304621012e66f60ceaad35f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Thank You Message for Rating</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_client_af35b8bd8304621012e66f60ceaad35f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 11:15:20</sys_updated_on>
+        <table>x_1610434_event_0_feedback</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

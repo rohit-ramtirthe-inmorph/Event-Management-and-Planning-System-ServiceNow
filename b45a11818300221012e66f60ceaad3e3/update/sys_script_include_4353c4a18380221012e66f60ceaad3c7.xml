@@ -76,6 +76,7 @@ BudgetUtils.prototype = {
     _mapBudgetFields: function(_budgetGR) {
         return {
             sysId: _budgetGR.getUniqueValue(),
+			budgetId: _budgetGR.getValue('number'),
             eventId: _budgetGR.getValue('event_id'),
             totalBudget: _budgetGR.getValue('total_budget'),
             amountSpent: _budgetGR.getValue('amount_spent'),
@@ -89,14 +90,14 @@ BudgetUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 12:56:38</sys_created_on>
         <sys_id>4353c4a18380221012e66f60ceaad3c7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>BudgetUtils</sys_name>
         <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
         <sys_update_name>sys_script_include_4353c4a18380221012e66f60ceaad3c7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 18:38:20</sys_updated_on>
+        <sys_updated_on>2025-03-03 18:16:13</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>4353c4a18380221012e66f60ceaad3c7</id>

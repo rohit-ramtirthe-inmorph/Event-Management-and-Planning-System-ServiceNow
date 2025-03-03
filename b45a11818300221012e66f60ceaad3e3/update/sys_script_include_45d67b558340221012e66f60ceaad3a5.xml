@@ -62,6 +62,7 @@ EventUtils.prototype = {
     _mapEventFields: function(_eventGR) {
         return {
             sysId: _eventGR.getUniqueValue(),
+			eventId: _eventGR.getValue('number'),
             eventName: _eventGR.getValue('event_name'),
             eventDate: _eventGR.getValue('event_date'),
             location: _eventGR.getValue('location'),
@@ -76,14 +77,14 @@ EventUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 12:05:09</sys_created_on>
         <sys_id>45d67b558340221012e66f60ceaad3a5</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>EventUtils</sys_name>
         <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
         <sys_update_name>sys_script_include_45d67b558340221012e66f60ceaad3a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 07:30:44</sys_updated_on>
+        <sys_updated_on>2025-03-03 18:09:24</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>45d67b558340221012e66f60ceaad3a5</id>
