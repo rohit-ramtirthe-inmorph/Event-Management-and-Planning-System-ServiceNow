@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.TaskUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TaskUtils = Class.create();
+TaskUtils.prototype = {
+    initialize: function() {
+        this._taskTable = 'x_1610434_event_0_event_task';
+    },
+
+    getTasksForEvent: function(_eventId) {
+        var _taskList = [];
+        var _taskGR = new GlideRecordSecure(this._taskTable);
+        _taskGR.addQuery('event_id', _eventId);
+        _taskGR.query();
+        while (_taskGR.next()) {
+            _taskList.push(this._mapTaskFields(_taskGR));
+        }
+        return _taskList;
+    },
+
+    isTaskOverdue: function(_taskId) {
+        var _taskGR = new GlideRecordSecure(this._taskTable);
+        _taskGR.addQuery('sys_id', _taskId);
+        _taskGR.query();
+        if (_taskGR.next()) {
+            var _dueDate = new GlideDateTime(_taskGR.getValue('due_date'));
+            return _dueDate < new GlideDateTime();
+        }
+        return false;
+    },
+
+    getTaskDetailsById: function(_taskId) {
+        var _taskGR = new GlideRecordSecure(this._taskTable);
+        _taskGR.addQuery('sys_id', _taskId);
+        _taskGR.query();
+        if (_taskGR.next()) {
+            return this._mapTaskFields(_taskGR);
+        }
+        return null;
+    },
+
+    getTasksByDueDate: function(_dueDate) {
+        var _taskList = [];
+        var _taskGR = new GlideRecordSecure(this._taskTable);
+
+        var _startOfDay = new GlideDateTime(_dueDate + " 00:00:00");
+        var _endOfDay = new GlideDateTime(_dueDate + " 23:59:59");
+
+        _taskGR.addQuery('due_date', '>=', _startOfDay);
+        _taskGR.addQuery('due_date', '<=', _endOfDay);
+        _taskGR.query();
+
+        while (_taskGR.next()) {
+            _taskList.push(this._mapTaskFields(_taskGR));
+        }
+        return _taskList;
+    },
+
+    _mapTaskFields: function(_taskGR) {
+        return {
+            sysId: _taskGR.getUniqueValue(),
+            eventId: _taskGR.getValue('event_id'),
+            taskName: _taskGR.getValue('task_name'),
+            assignedTo: _taskGR.getValue('assigned_to'),
+            dueDate: _taskGR.getValue('due_date'),
+            status: _taskGR.getValue('status'),
+            priority: _taskGR.getValue('priority')
+        };
+    },
+
+    type: 'TaskUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:52:30</sys_created_on>
+        <sys_id>29728ce18340221012e66f60ceaad399</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TaskUtils</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_29728ce18340221012e66f60ceaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 17:27:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>29728ce18340221012e66f60ceaad399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:52:29</sys_created_on>
+        <sys_id>d2a2c8298340221012e66f60ceaad302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 12:52:29</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

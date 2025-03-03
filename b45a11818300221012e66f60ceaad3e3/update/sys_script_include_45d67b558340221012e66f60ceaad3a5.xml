@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.EventUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtils = Class.create();
+EventUtils.prototype = {
+    initialize: function() {
+        this._eventTable = 'x_1610434_event_0_event_record';
+    },
+
+    getEventDetails: function(_eventId) {
+        var _eventGR = new GlideRecordSecure(this._eventTable);
+        _eventGR.addQuery('sys_id', _eventId);
+        _eventGR.query();
+        if (_eventGR.next()) {
+            return this._mapEventFields(_eventGR);
+        }
+        return null;
+    },
+
+    isEventVIP: function(_eventId) {
+        var _eventGR = new GlideRecordSecure(this._eventTable);
+        _eventGR.addQuery('sys_id', _eventId);
+        _eventGR.query();
+        if (_eventGR.next()) {
+            return _eventGR.vip.toString() == 'true';
+        }
+        return false;
+    },
+
+    calculateRemainingBudget: function(_eventId) {
+        return new BudgetUtils().calculateRemainingBudget(_eventId);
+    },
+
+    getEventTasks: function(_eventId) {
+        return new TaskUtils().getTasksForEvent(_eventId);
+    },
+
+    getEventAttendees: function(_eventId) {
+        return new AttendeeUtils().getAttendeesByEvent(_eventId);
+    },
+
+    getEventVendors: function(_eventId) {
+        return new VendorUtils().getVendorsByEvent(_eventId);
+    },
+
+    getEventBudgetDetails: function(_eventId) {
+        return new BudgetUtils().getBudgetDetailsByEvent(_eventId);
+    },
+
+    getEventFeedback: function(_eventId) {
+        return new FeedbackUtils().getFeedbackByEvent(_eventId);
+    },
+
+    _mapEventFields: function(_eventGR) {
+        return {
+            sysId: _eventGR.getUniqueValue(),
+            eventName: _eventGR.getValue('event_name'),
+            eventDate: _eventGR.getValue('event_date'),
+            location: _eventGR.getValue('location'),
+            vip: _eventGR.vip.toString() == 'true',
+            status: _eventGR.getValue('status')
+        };
+    },
+
+    type: 'EventUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:05:09</sys_created_on>
+        <sys_id>45d67b558340221012e66f60ceaad3a5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>EventUtils</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_45d67b558340221012e66f60ceaad3a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 07:30:44</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>45d67b558340221012e66f60ceaad3a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:05:09</sys_created_on>
+        <sys_id>b0d773d58340221012e66f60ceaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 12:05:09</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

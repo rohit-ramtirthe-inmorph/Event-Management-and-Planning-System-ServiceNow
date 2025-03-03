@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.EventUtilsCS</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtilsCS</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtilsCS = Class.create();
+EventUtilsCS.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getEventDetails: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventDetails(_eventId));
+    },
+
+    isEventVIP: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().isEventVIP(_eventId));
+    },
+
+    calculateRemainingBudget: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().calculateRemainingBudget(_eventId));
+    },
+
+    getEventTasks: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventTasks(_eventId));
+    },
+
+    getEventAttendees: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventAttendees(_eventId));
+    },
+
+    getEventVendors: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventVendors(_eventId));
+    },
+
+    getEventBudgetDetails: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventBudgetDetails(_eventId));
+    },
+
+    getEventFeedback: function() {
+		var _eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventFeedback(_eventId));
+    },
+
+    type: 'EventUtilsCS'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 19:55:19</sys_created_on>
+        <sys_id>b7b029618344221012e66f60ceaad396</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>EventUtilsCS</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_b7b029618344221012e66f60ceaad396</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 09:34:29</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b7b029618344221012e66f60ceaad396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 19:55:18</sys_created_on>
+        <sys_id>f763e9698304221012e66f60ceaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 19:55:18</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

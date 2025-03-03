@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.AttendeeUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AttendeeUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AttendeeUtils = Class.create();
+AttendeeUtils.prototype = {
+    initialize: function () {
+        this._attendeeTable = 'x_1610434_event_0_attendee';
+    },
+
+    isAttendeeRegistered: function (_attendeeId) {
+        var _attendeeGR = new GlideRecordSecure(this._attendeeTable);
+        _attendeeGR.addQuery('sys_id', _attendeeId);
+        _attendeeGR.query();
+        return _attendeeGR.hasNext();
+    },
+
+    getAttendeeDetailsById: function (_attendeeId) {
+        var _attendeeGR = new GlideRecordSecure(this._attendeeTable);
+        _attendeeGR.addQuery('sys_id', _attendeeId);
+        _attendeeGR.query();
+        if (_attendeeGR.next()) {
+            return this._mapAttendeeFields(_attendeeGR);
+        }
+        return null;
+    },
+
+    getAttendeesByEvent: function (_eventId) {
+        var _attendeeList = [];
+        var _attendeeGR = new GlideRecordSecure(this._attendeeTable);
+        _attendeeGR.addQuery('event_id', _eventId);
+        _attendeeGR.query();
+        while (_attendeeGR.next()) {
+            _attendeeList.push(this._mapAttendeeFields(_attendeeGR));
+        }
+        return _attendeeList;
+    },
+
+	_mapAttendeeFields: function (_attendeeGR) {
+        return {
+            sysId: _attendeeGR.getUniqueValue(),
+            firstName: _attendeeGR.getValue('first_name'),
+            lastName: _attendeeGR.getValue('last_name'),
+            email: _attendeeGR.getValue('email'),
+            contactNumber: _attendeeGR.getValue('contact_number'),
+            eventId: _attendeeGR.getValue('event_id')
+        };
+    },
+
+    type: 'AttendeeUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:54:07</sys_created_on>
+        <sys_id>f9e2c8298340221012e66f60ceaad303</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AttendeeUtils</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_f9e2c8298340221012e66f60ceaad303</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 16:48:09</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f9e2c8298340221012e66f60ceaad303</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:54:07</sys_created_on>
+        <sys_id>c60388e18380221012e66f60ceaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 12:54:07</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

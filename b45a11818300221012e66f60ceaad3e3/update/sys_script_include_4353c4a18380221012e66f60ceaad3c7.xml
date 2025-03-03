@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.BudgetUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BudgetUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BudgetUtils = Class.create();
+BudgetUtils.prototype = {
+    initialize: function() {
+        this._budgetTable = 'x_1610434_event_0_budget';
+    },
+
+    // calculateTotalBudget: function (_eventId) {
+    //     var _budgetGR = new GlideRecordSecure(this._budgetTable);
+    //     _budgetGR.addQuery('event_id', _eventId);
+    //     _budgetGR.query();
+    //     if (_budgetGR.next()) {
+    //         return _budgetGR.getValue('total_budget');
+    //     }
+    //     return 0;
+    // },
+    calculateTotalBudget: function(_eventId) {
+        var _totalBudget = 0;
+        var _budgetGA = new GlideAggregate(this._budgetTable);
+        _budgetGA.addQuery('event_id', _eventId);
+        _budgetGA.addAggregate('SUM', 'total_budget');
+        _budgetGA.query();
+        if (_budgetGA.next()) {
+            _totalBudget = _budgetGA.getAggregate('SUM', 'total_budget');
+        }
+        return _totalBudget;
+    },
+
+    calculateRemainingBudget: function(_eventId) {
+        var _totalBudget = 0,
+            _amountSpent = 0,
+            _amountRemaining = 0;
+
+        var _budgetGR = new GlideRecordSecure(this._budgetTable);
+        _budgetGR.addQuery('event_id', _eventId);
+        _budgetGR.query();
+
+        if (_budgetGR.next()) {
+            _totalBudget = parseFloat(_budgetGR.getValue('total_budget')) || 0;
+            _amountSpent = parseFloat(_budgetGR.getValue('amount_spent')) || 0;
+            _amountRemaining = _totalBudget - _amountSpent;
+        }
+
+        return _amountRemaining;
+    },
+
+    isBudgetApproved: function(_eventId) {
+        var _budgetGR = new GlideRecordSecure(this._budgetTable);
+        _budgetGR.addQuery('event_id', _eventId);
+        _budgetGR.addQuery('status', 'approved');
+        _budgetGR.query();
+        return _budgetGR.hasNext();
+    },
+
+    getBudgetDetailsByEvent: function(_eventId) {
+        var _budgetList = [];
+        var _budgetGR = new GlideRecordSecure(this._budgetTable);
+        _budgetGR.addQuery('event_id', _eventId);
+        _budgetGR.query();
+        while (_budgetGR.next()) {
+            _budgetList.push(this._mapBudgetFields(_budgetGR));
+        }
+        return _budgetList;
+    },
+
+    _mapBudgetFields: function(_budgetGR) {
+        return {
+            sysId: _budgetGR.getUniqueValue(),
+            eventId: _budgetGR.getValue('event_id'),
+            totalBudget: _budgetGR.getValue('total_budget'),
+            amountSpent: _budgetGR.getValue('amount_spent'),
+            amountRemaining: _budgetGR.getValue('amount_remaining'),
+            status: _budgetGR.getValue('status')
+        };
+    },
+    type: 'BudgetUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:56:38</sys_created_on>
+        <sys_id>4353c4a18380221012e66f60ceaad3c7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>BudgetUtils</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_4353c4a18380221012e66f60ceaad3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 18:38:20</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4353c4a18380221012e66f60ceaad3c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:56:38</sys_created_on>
+        <sys_id>7e9384258380221012e66f60ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 12:56:38</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
