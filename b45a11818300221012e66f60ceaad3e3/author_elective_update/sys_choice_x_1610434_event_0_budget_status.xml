@@ -5,7 +5,7 @@
             <name>x_1610434_event_0_budget</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 15:49:49</sys_created_on>
+            <sys_created_on>2025-03-02 12:18:25</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>status</sys_name>
             <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
@@ -13,25 +13,25 @@
             <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
             <sys_update_name>sys_choice_x_1610434_event_0_budget_status</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 15:49:49</sys_updated_on>
+            <sys_updated_on>2025-03-02 12:18:25</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>new</label>
+            <label>New</label>
             <language>en</language>
             <name>x_1610434_event_0_budget</name>
             <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 15:49:49</sys_created_on>
+            <sys_created_on>2025-03-02 12:18:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 15:49:49</sys_updated_on>
+            <sys_updated_on>2025-03-02 12:18:25</sys_updated_on>
             <value>new</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -39,18 +39,18 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>pending</label>
+            <label>Pending</label>
             <language>en</language>
             <name>x_1610434_event_0_budget</name>
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 15:49:49</sys_created_on>
+            <sys_created_on>2025-03-02 12:18:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 15:49:49</sys_updated_on>
+            <sys_updated_on>2025-03-02 12:18:25</sys_updated_on>
             <value>pending</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -58,18 +58,18 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>approved</label>
+            <label>Approved</label>
             <language>en</language>
             <name>x_1610434_event_0_budget</name>
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 15:49:49</sys_created_on>
+            <sys_created_on>2025-03-02 12:18:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 15:49:49</sys_updated_on>
+            <sys_updated_on>2025-03-02 12:18:25</sys_updated_on>
             <value>approved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -77,18 +77,18 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>rejected</label>
+            <label>Rejected</label>
             <language>en</language>
             <name>x_1610434_event_0_budget</name>
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 15:49:49</sys_created_on>
+            <sys_created_on>2025-03-02 12:18:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 15:49:49</sys_updated_on>
+            <sys_updated_on>2025-03-02 12:18:25</sys_updated_on>
             <value>rejected</value>
         </sys_choice>
     </sys_choice>

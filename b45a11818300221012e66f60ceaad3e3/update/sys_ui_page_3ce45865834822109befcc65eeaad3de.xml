@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1610434_event_0_upcoming_events_dashboard.do</endpoint>
+        <html><![CDATA[<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .loading {
+            font-size: 16px;
+            color: gray;
+        }
+    </style>
+</head>
+<body ng-app="eventApp" ng-controller="EventController">
+    
+    <h2>Upcoming Events</h2>
+    <p class="loading" ng-if="loading">Loading events...</p>
+
+    <table ng-if="events.length > 0">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Status</th>
+				<th>Contact Person</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="event in events">
+                <td>{{ event.name }}</td>
+                <td>{{ event.date }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.status }}</td>
+				<td>{{ event.contact }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p ng-if="!loading &amp;&amp; events.length === 0">No upcoming events found.</p>
+
+    <script>
+        var app = angular.module('eventApp', []);
+
+        app.controller('EventController', function($scope, $http) {
+            $scope.loading = true;
+            $scope.events = [];
+
+            var ga = new GlideAjax('EventUtilsUIPage'); // Calls Script Include
+            ga.addParam('sysparm_name', 'getUpcomingEvents');
+
+            ga.getXMLAnswer(function(response) {
+                $scope.$apply(function() { 
+                    $scope.events = JSON.parse(response);
+                    $scope.loading = false;
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+]]></html>
+        <name>upcoming_events_dashboard</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:12:25</sys_created_on>
+        <sys_id>3ce45865834822109befcc65eeaad3de</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>upcoming_events_dashboard</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_ui_page_3ce45865834822109befcc65eeaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 17:16:37</sys_updated_on>
+    </sys_ui_page>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3ce45865834822109befcc65eeaad3de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:12:24</sys_created_on>
+        <sys_id>b8f4942d830822109befcc65eeaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:12:24</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

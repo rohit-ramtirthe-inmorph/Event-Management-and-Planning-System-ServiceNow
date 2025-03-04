@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.EventUtilsUIPage</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtilsUIPage</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtilsUIPage = Class.create();
+EventUtilsUIPage.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getUpcomingEvents: function() {
+        var eventList = [];
+        var eventGR = new GlideRecord('x_1610434_event_0_event_record'); // Replace with actual table name
+
+        eventGR.addQuery('event_date', '>=', gs.daysAgoStart(0)); // Fetch future events
+        eventGR.addQuery('status', '!=', 'Cancelled'); // Ignore cancelled events
+        eventGR.orderBy('event_date'); // Sort by date
+        eventGR.query();
+
+        while (eventGR.next()) {
+            eventList.push({
+                name: eventGR.getValue('event_name'),
+                date: eventGR.getValue('event_date'),
+                location: eventGR.getDisplayValue('location'),
+                status: eventGR.getValue('status'),
+				contact: eventGR.getValue('contact_person')
+            });
+        }
+
+        return JSON.stringify(eventList);
+    },
+    type: 'EventUtilsUIPage'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:21:08</sys_created_on>
+        <sys_id>0dd694a5834822109befcc65eeaad32d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>EventUtilsUIPage</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_0dd694a5834822109befcc65eeaad32d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 17:17:15</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0dd694a5834822109befcc65eeaad32d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:21:07</sys_created_on>
+        <sys_id>68f690a5834822109befcc65eeaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:21:07</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>3a7f5c298300221012e66f60ceaad33d</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>272b0d65834c22109befcc65eeaad3ee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,41 +18,41 @@
             <element>event_id</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>f27f5c298300221012e66f60ceaad33e</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>232b0d65834c22109befcc65eeaad3ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>vendor_name</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>7a7f5c298300221012e66f60ceaad33e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_person</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>fe7f5c298300221012e66f60ceaad33e</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>a72b0d65834c22109befcc65eeaad3ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>2f2b0d65834c22109befcc65eeaad3ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,111 +60,55 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>767f5c298300221012e66f60ceaad33f</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>a32b0d65834c22109befcc65eeaad3f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
+            <element>vendor_name</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>fa7f5c298300221012e66f60ceaad33f</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>2b2b0d65834c22109befcc65eeaad3f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>727f5c298300221012e66f60ceaad340</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>contact_number</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>f67f5c298300221012e66f60ceaad340</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>af2b0d65834c22109befcc65eeaad3f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>services_provided</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>7e7f5c298300221012e66f60ceaad340</sys_id>
+            <sys_created_on>2025-03-02 18:09:20</sys_created_on>
+            <sys_id>272b0d65834c22109befcc65eeaad3f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>f27f5c298300221012e66f60ceaad341</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>email</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>7a7f5c298300221012e66f60ceaad341</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>availability</element>
-            <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-02 14:58:25</sys_created_on>
-            <sys_id>fe7f5c298300221012e66f60ceaad341</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vendor Information" display_value="Vendor Information" name="x_1610434_event_0_vendor" sys_domain="global" view="Default view">1e851e0d8304221012e66f60ceaad31f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-02 14:58:25</sys_updated_on>
+            <sys_updated_on>2025-03-02 18:09:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -175,7 +119,7 @@
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-01 10:17:15</sys_created_on>
+            <sys_created_on>2025-03-01 08:29:52</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1e851e0d8304221012e66f60ceaad31f</sys_id>
@@ -187,7 +131,7 @@
             <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
             <sys_update_name>sys_ui_section_1e851e0d8304221012e66f60ceaad31f</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 10:22:10</sys_updated_on>
+            <sys_updated_on>2025-03-01 08:32:50</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

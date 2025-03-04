@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1610434_event_0_event_details_dashboard.do</endpoint>
+        <html><![CDATA[<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #007bff; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        .loading { font-size: 16px; color: gray; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body ng-app="eventApp" ng-controller="EventController">
+
+    <h2>Event Details</h2>
+    <p class="loading" ng-if="loading">Loading event details...</p>
+
+    <div ng-if="event">
+        <p><strong>Name:</strong> {{ event.name }}</p>
+        <p><strong>Date:</strong> {{ event.date }}</p>
+        <p><strong>Location:</strong> {{ event.location }}</p>
+        <p><strong>Status:</strong> {{ event.status }}</p>
+    </div>
+
+    <div class="section" ng-if="tasks.length > 0">
+        <h3>Tasks</h3>
+        <table>
+            <tr><th>Task</th><th>Assigned To</th><th>Status</th></tr>
+            <tr ng-repeat="task in tasks">
+                <td>{{ task.name }}</td>
+                <td>{{ task.assigned_to }}</td>
+                <td>{{ task.status }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" ng-if="attendees.length > 0">
+        <h3>Attendees</h3>
+        <table>
+            <tr><th>Name</th><th>Email</th><th>Contact</th></tr>
+            <tr ng-repeat="attendee in attendees">
+                <td>{{ attendee.name }}</td>
+                <td>{{ attendee.email }}</td>
+                <td>{{ attendee.contact }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" ng-if="vendors.length > 0">
+        <h3>Vendors</h3>
+        <table>
+            <tr><th>Vendor</th><th>Service</th></tr>
+            <tr ng-repeat="vendor in vendors">
+                <td>{{ vendor.name }}</td>
+                <td>{{ vendor.service }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" ng-if="budget">
+        <h3>Budget</h3>
+        <p><strong>Total Amount:</strong> {{ budget.total }}</p>
+        <p><strong>Amount Spent:</strong> {{ budget.spent }}</p>
+        <p><strong>Remaining Amount:</strong> {{ budget.remaining }}</p>
+    </div>
+
+    <div class="section" ng-if="schedule.length > 0">
+        <h3>Schedule</h3>
+        <table>
+            <tr><th>Activity</th><th>Time</th></tr>
+            <tr ng-repeat="item in schedule">
+                <td>{{ item.activity }}</td>
+                <td>{{ item.time }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" ng-if="feedback.length > 0">
+        <h3>Feedback</h3>
+        <table>
+            <tr><th>User</th><th>Rating</th><th>Comments</th></tr>
+            <tr ng-repeat="fb in feedback">
+                <td>{{ fb.user }}</td>
+                <td>{{ fb.rating }}</td>
+                <td>{{ fb.comment }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <p ng-if="!loading &amp;&amp; !event">Event not found.</p>
+
+    <script>
+        var app = angular.module('eventApp', []);
+
+        app.controller('EventController', function($scope) {
+            $scope.loading = true;
+            $scope.event = null;
+            $scope.tasks = [];
+            $scope.attendees = [];
+            $scope.vendors = [];
+            $scope.budget = null;
+            $scope.schedule = [];
+            $scope.feedback = [];
+
+            var eventId = '13822f898340e2109befcc65eeaad37c'; // Replace with dynamic event ID
+
+            var ga = new GlideAjax('EventDetailsUtils');
+            ga.addParam('sysparm_name', 'getEventDetails');
+            ga.addParam('sysparm_event_id', eventId);
+
+            ga.getXMLAnswer(function(response) {
+                $scope.$apply(function() {
+                    var data = JSON.parse(response);
+                    $scope.event = data.event;
+                    $scope.tasks = data.tasks;
+                    $scope.attendees = data.attendees;
+                    $scope.vendors = data.vendors;
+                    $scope.budget = data.budget;
+                    $scope.schedule = data.schedule;
+                    $scope.feedback = data.feedback;
+                    $scope.loading = false;
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+]]></html>
+        <name>event_details_dashboard</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 17:52:48</sys_created_on>
+        <sys_id>3bb0c1e5830c22109befcc65eeaad343</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>event_details_dashboard</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_ui_page_3bb0c1e5830c22109befcc65eeaad343</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 18:55:12</sys_updated_on>
+    </sys_ui_page>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3bb0c1e5830c22109befcc65eeaad343</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 17:24:10</sys_created_on>
+        <sys_id>bdd009e5830c22109befcc65eeaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 17:24:10</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
