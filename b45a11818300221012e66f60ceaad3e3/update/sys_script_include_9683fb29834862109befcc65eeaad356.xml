@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.EventUtilsCS</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtilsCS</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtilsCS = Class.create();
+EventUtilsCS.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getEventDetails: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventDetails(eventId));
+    },
+
+    isEventVIP: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().isEventVIP(eventId));
+    },
+
+    calculateRemainingBudget: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().calculateRemainingBudget(eventId));
+    },
+
+    getEventTasks: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventTasks(eventId));
+    },
+
+    getEventAttendees: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventAttendees(eventId));
+    },
+
+    getEventVendors: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventVendors(eventId));
+    },
+
+    getEventBudgetDetails: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventBudgetDetails(eventId));
+    },
+
+    getEventFeedback: function() {
+		var eventId = this.getParameter('sysparm_eventId');
+        return JSON.stringify(new EventUtils().getEventFeedback(eventId));
+    },
+
+	getEventDetails1: function() {
+        var eventId = this.getParameter('sysparm_eventId');
+        var eventGR = new GlideRecord('x_1610434_event_0_event_record');
+		eventGR.addQuery('sys_id',eventId);
+		eventGR.query();
+        if (eventGR.next()) {
+            var eventDetails = {
+                event_name: eventGR.getValue('event_name'),
+                event_date: eventGR.getValue('event_date'),
+                location: eventGR.getDisplayValue('location'),
+                status: eventGR.getValue('status'),
+                vip: eventGR.getValue('vip') // Assuming there's a VIP field
+            };
+            return JSON.stringify(eventDetails);
+        }
+
+        return JSON.stringify({ error: "Event not found" });
+    },
+
+	checkLocationAvailability: function() {
+		var location = this.getParameter('sysparm_location');
+		var eventDate = this.getParameter('sysparm_eventDate');
+		// var startDateTime = new GlideDateTime(eventDate + ' 00:00:00');
+		// var endDateTime = new GlideDateTime(eventDate + ' 23:59:59');
+		gs.info(startDateTime +' '+ endDateTime);
+        var eventRecord = new GlideRecord('x_1610434_event_0_event_record');
+        eventRecord.addQuery('location', location);
+		eventRecord.addQuery('event_date', eventDate);
+        // eventRecord.addQuery('event_date', '>=', startDateTime);  
+		// eventRecord.addQuery('event_date', '<=', endDateTime); 
+        eventRecord.query();
+        
+        if (eventRecord.next()) {
+            return false;
+        }
+        return true;
+    },
+
+    type: 'EventUtilsCS'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:26:10</sys_created_on>
+        <sys_id>9683fb29834862109befcc65eeaad356</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>EventUtilsCS</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_9683fb29834862109befcc65eeaad356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 16:53:28</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9683fb29834862109befcc65eeaad356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:26:09</sys_created_on>
+        <sys_id>fcd3fb29834862109befcc65eeaad3b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:26:09</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
