@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1610434_event_0_event_task</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1610434_event_0_event_task.*</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[if (gs.hasRole('x_1610434_event_0.event_planner') && current.event_id.status.toString() == 'scheduled'){
+    answer = true;
+} else {
+    answer = false;
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 12:02:01</sys_created_on>
+        <sys_id>564a8686838ca21012e66f60ceaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1610434_event_0_event_task.*</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_security_acl_564a8686838ca21012e66f60ceaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 12:02:01</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</application>
+        <file_path/>
+        <instance_id>182a6b961b0ec294168f4089bd4bcba9</instance_id>
+        <instance_name>dev267515</instance_name>
+        <name>sys_security_acl_564a8686838ca21012e66f60ceaad36b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;applies_to/&gt;&lt;condition/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description&gt;Default access control on x_1610434_event_0_event_task&lt;/description&gt;&lt;local_or_existing&gt;Local&lt;/local_or_existing&gt;&lt;name&gt;x_1610434_event_0_event_task.*&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[if (gs.hasRole('x_1610434_event_0.event_planner') &amp;&amp; current.event_id.status.toString() == 'scheduled'){
+    answer = true;
+} else {
+    answer = false;
+}]]&gt;&lt;/script&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-04 12:02:01&lt;/sys_created_on&gt;&lt;sys_id&gt;564a8686838ca21012e66f60ceaad36b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_1610434_event_0_event_task.*&lt;/sys_name&gt;&lt;sys_package display_value="Event Management and Planning System" source="x_1610434_event_0"&gt;b45a11818300221012e66f60ceaad3e3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management and Planning System"&gt;b45a11818300221012e66f60ceaad3e3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_564a8686838ca21012e66f60ceaad36b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-04 12:02:01&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-543830517</payload_hash>
+        <record_name>x_1610434_event_0_event_task.*</record_name>
+        <reverted_from/>
+        <source>8a27cb7983cc621012e66f60ceaad3bd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 12:02:01</sys_created_on>
+        <sys_id>1e4a8686838ca21012e66f60ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1956108cb790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 12:02:01</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>124a8686868ca210f334845c98fffa6e</update_guid>
+        <update_guid_history>124a8686868ca210f334845c98fffa6e:-543830517</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 12:02:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>5ef460ed56994730aa1c9f40db010e40</sys_id>
+        <sys_metadata>564a8686838ca21012e66f60ceaad36b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1610434_event_0_event_task.*</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_parent display_value="x_1610434_event_0_event_task">410ff10183c0221012e66f60ceaad3cd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_scope_delete display_value="">3c069feccaf84bf38ee640628355c471</sys_scope_delete>
+        <sys_update_name>sys_security_acl_564a8686838ca21012e66f60ceaad36b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_564a8686838ca21012e66f60ceaad36b">1e4a8686838ca21012e66f60ceaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 12:02:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

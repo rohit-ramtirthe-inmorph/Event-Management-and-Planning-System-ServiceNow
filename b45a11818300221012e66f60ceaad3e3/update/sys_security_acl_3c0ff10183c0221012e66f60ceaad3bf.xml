@@ -2,7 +2,7 @@
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>false</advanced>
+        <advanced>true</advanced>
         <applies_to/>
         <condition/>
         <decision_type>allow</decision_type>
@@ -10,20 +10,37 @@
         <local_or_existing>Local</local_or_existing>
         <name>x_1610434_event_0_event_task</name>
         <operation display_value="write">write</operation>
-        <script/>
+        <script><![CDATA[if (gs.hasRole('x_1610434_event_0.event_admin') || gs.getUserID() == current.getValue('assigned_to')) {
+    answer = true;
+} else {
+    answer = false;
+}
+
+gs.info(current.getUniqueValue());]]></script>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-01 08:38:50</sys_created_on>
         <sys_id>3c0ff10183c0221012e66f60ceaad3bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>x_1610434_event_0_event_task</sys_name>
         <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
         <sys_update_name>sys_security_acl_3c0ff10183c0221012e66f60ceaad3bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-01 08:38:50</sys_updated_on>
+        <sys_updated_on>2025-03-04 12:00:38</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3c0ff10183c0221012e66f60ceaad3bf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 08:34:09</sys_created_on>
+        <sys_id>69ba1d8a8388a21012e66f60ceaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 08:34:09</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
