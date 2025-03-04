@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610434_event_0.TaskUtilsScriptInclude</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskUtilsScriptInclude</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TaskUtilsScriptInclude = Class.create();
+TaskUtilsScriptInclude.prototype = {
+    initialize: function() {
+        this.taskTable = 'x_1610434_event_0_event_task';
+    },
+
+    getTasksForEvent: function(eventId) {
+        var taskList = [];
+        var taskGR = new GlideRecordSecure(this.taskTable);
+        taskGR.addQuery('event_id', eventId);
+        taskGR.query();
+        while (taskGR.next()) {
+            taskList.push(this.mapTaskFields(taskGR));
+        }
+        return taskList;
+    },
+
+    isTaskOverdue: function(taskId) {
+        var taskGR = new GlideRecordSecure(this.taskTable);
+        taskGR.addQuery('sys_id', taskId);
+        taskGR.query();
+        if (taskGR.next()) {
+            var dueDate = new GlideDateTime(taskGR.getValue('due_date'));
+            return dueDate < new GlideDateTime();
+        }
+        return false;
+    },
+
+    getTaskDetailsById: function(taskId) {
+        var taskGR = new GlideRecordSecure(this.taskTable);
+        taskGR.addQuery('sys_id', taskId);
+        taskGR.query();
+        if (taskGR.next()) {
+            return this.mapTaskFields(taskGR);
+        }
+        return null;
+    },
+
+    getTasksByDueDate: function(dueDate) {
+        var taskList = [];
+        var taskGR = new GlideRecordSecure(this.taskTable);
+
+        var startOfDay = new GlideDateTime(dueDate + " 00:00:00");
+        var endOfDay = new GlideDateTime(dueDate + " 23:59:59");
+
+        taskGR.addQuery('due_date', '>=', startOfDay);
+        taskGR.addQuery('due_date', '<=', endOfDay);
+        taskGR.query();
+
+        while (taskGR.next()) {
+            taskList.push(this.mapTaskFields(taskGR));
+        }
+        return taskList;
+    },
+
+    mapTaskFields: function(taskGR) {
+        return {
+            sysId: taskGR.getUniqueValue(),
+            eventId: taskGR.getValue('event_id'),
+            taskName: taskGR.getValue('task_name'),
+            assignedTo: taskGR.getValue('assigned_to'),
+            dueDate: taskGR.getValue('due_date'),
+            status: taskGR.getValue('status'),
+            priority: taskGR.getValue('priority')
+        };
+    },
+
+	updateOverdueTasks: function() {
+        var taskGR = new GlideRecord(this.taskTable); 
+        taskGR.addQuery('due_date', '<', gs.daysAgo(0)); 
+        taskGR.addQuery('status', '!=', 'Cancelled'); 
+        taskGR.query();
+
+        while (taskGR.next()) {
+            taskGR.status = 'cancelled'; 
+            taskGR.update();
+        }
+
+    },
+
+    type: 'TaskUtilsScriptInclude'
+};
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:31:43</sys_created_on>
+        <sys_id>02d43ba9834862109befcc65eeaad390</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TaskUtilsScriptInclude</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sys_script_include_02d43ba9834862109befcc65eeaad390</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 17:08:39</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>02d43ba9834862109befcc65eeaad390</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:31:43</sys_created_on>
+        <sys_id>4a15fb29834862109befcc65eeaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:31:43</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
