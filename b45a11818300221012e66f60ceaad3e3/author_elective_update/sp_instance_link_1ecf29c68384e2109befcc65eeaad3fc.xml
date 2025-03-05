@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>plus-circle</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>2</order>
+        <roles/>
+        <sc_cat_item display_value="Create an Event">585fcdb98300a2109befcc65eeaad363</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">4c8f29c68384e2109befcc65eeaad394</sp_column>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 10:06:14</sys_created_on>
+        <sys_id>1ecf29c68384e2109befcc65eeaad3fc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create an Event</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>sp_instance_link_1ecf29c68384e2109befcc65eeaad3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:25:46</sys_updated_on>
+        <title>Create an Event</title>
+        <type>sc_cat_item</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=1ecf29c68384e2109befcc65eeaad3fc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</application>
+        <file_path/>
+        <instance_id>7db1fca3dbbd7190199b1729139619b2</instance_id>
+        <instance_name>dev267515</instance_name>
+        <name>sp_instance_link_1ecf29c68384e2109befcc65eeaad3fc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;plus-circle&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item display_value="Create an Event"&gt;585fcdb98300a2109befcc65eeaad363&lt;/sc_cat_item&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;4c8f29c68384e2109befcc65eeaad394&lt;/sp_column&gt;&lt;sp_page display_value="sc_cat_item"&gt;9f12251147132100ba13a5554ee490f4&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-04 10:06:14&lt;/sys_created_on&gt;&lt;sys_id&gt;1ecf29c68384e2109befcc65eeaad3fc&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create an Event&lt;/sys_name&gt;&lt;sys_package display_value="Event Management &amp;amp;amp; Planning System" source="x_1610434_event_0"&gt;b45a11818300221012e66f60ceaad3e3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management &amp;amp;amp; Planning System"&gt;b45a11818300221012e66f60ceaad3e3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_1ecf29c68384e2109befcc65eeaad3fc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-04 11:25:46&lt;/sys_updated_on&gt;&lt;title&gt;Create an Event&lt;/title&gt;&lt;type&gt;sc_cat_item&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1ecf29c68384e2109befcc65eeaad3fc"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1377384872</payload_hash>
+        <record_name>Create an Event</record_name>
+        <reverted_from/>
+        <source>d70c61828384e2109befcc65eeaad3b4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 11:25:47</sys_created_on>
+        <sys_id>63f1424e83c4e2109befcc65eeaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19560e79ebd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:25:47</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>e7f1424e77c4e210c6610b3d204eb4b6</update_guid>
+        <update_guid_history>e7f1424e77c4e210c6610b3d204eb4b6:-1377384872,2270b90a2c84e210f17bf3ee3fdccd6f:-291032775,ff10b10a1184e2107da4d7652713a3e3:-2062587842,99ffedc6af84e210342efcfb45aa125a:-1318568072,9acf29c66284e210fd1fd717768e28fe:1455220750</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">9be24a8e83c4e2109befcc65eeaad333</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 11:29:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>017c9983e396439e8217e442ba6459b1</sys_id>
+        <sys_metadata>1ecf29c68384e2109befcc65eeaad3fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create an Event</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_scope_delete display_value="">36e0d27460c44ee88f0f2a6201a32ea4</sys_scope_delete>
+        <sys_update_name>sp_instance_link_1ecf29c68384e2109befcc65eeaad3fc</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_1ecf29c68384e2109befcc65eeaad3fc">63f1424e83c4e2109befcc65eeaad3b7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 11:29:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
