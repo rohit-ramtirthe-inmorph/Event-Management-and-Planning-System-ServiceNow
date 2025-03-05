@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1610434_event_0_budget" version="2" view="RPT617a21028384e2109befcc65eeaad3a4">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>7adaa5028384e2109befcc65eeaad35f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>event_id</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>72daa5028384e2109befcc65eeaad360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>total_budget</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>76daa5028384e2109befcc65eeaad360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount_spent</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>7adaa5028384e2109befcc65eeaad360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount_remaining</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>7edaa5028384e2109befcc65eeaad360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1610434_event_0_budget" element="NULL" name="x_1610434_event_0_budget" parent="NULL" relationship="NULL" sys_domain="global" view="7f82ca528340261012e66f60ceaad3c1">3edaa5028384e2109befcc65eeaad35e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_id>72daa5028384e2109befcc65eeaad361</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1610434_event_0_budget</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-04 09:44:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3edaa5028384e2109befcc65eeaad35e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1610434_event_0_budget</sys_name>
+            <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+            <sys_update_name>sys_ui_list_x_1610434_event_0_budget_RPT617a21028384e2109befcc65eeaad3a4</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-04 09:44:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt617a21028384e2109befcc65eeaad3a4" name="RPT617a21028384e2109befcc65eeaad3a4">7f82ca528340261012e66f60ceaad3c1</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

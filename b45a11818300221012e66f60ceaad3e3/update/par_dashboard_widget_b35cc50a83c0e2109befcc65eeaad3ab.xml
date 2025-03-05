@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">f7234d4e8380e2109befcc65eeaad3c3</canvas>
+        <component display_value="Bubble">50dbc52a13c8b4691f7c60e0246bf28c</component>
+        <component_props>{"showLegend":true,"legendPosition":"bottom","newReporting":false,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"filterConfigurations":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Budget","sourceType":"table","tableOrViewName":"x_1610434_event_0_budget","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE2MTA4NDNfZXZlbnRfMF9idWRnZXQxNzQxMDczMjUxNzgz","dataCategories":["trend","group","simple"]}],"componentId":"bzq4amv9","colorConfig":{"type":"default"},"metrics":[{"dataSource":"dGFibGV4XzE2MTA4NDNfZXZlbnRfMF9idWRnZXQxNzQxMDczMjUxNzgz","id":"ZEdGaWJHVjRYekUyTVRBNE5ETmZaWFpsYm5SZk1GOWlkV1JuWlhReE56UXhNRGN6TWpVeE56Z3oxNzQxMDczMjU3Mzc0","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE2MTA4NDNfZXZlbnRfMF9idWRnZXQxNzQxMDczMjUxNzgz","groupByField":"total_budget","isRange":false,"isChoice":false,"isPaBucket":false}],"categoryIndex":0,"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false},{"groupBy":[{"dataSource":"dGFibGV4XzE2MTA4NDNfZXZlbnRfMF9idWRnZXQxNzQxMDczMjUxNzgz","groupByField":"amount_spent","isRange":false,"isChoice":false,"isPaBucket":false}],"categoryIndex":1,"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false},{"groupBy":[{"dataSource":"dGFibGV4XzE2MTA4NDNfZXZlbnRfMF9idWRnZXQxNzQxMDczMjUxNzgz","groupByField":"event_id","isRange":false,"isChoice":false,"isPaBucket":false}],"categoryIndex":2,"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":false,"disableRanges":false}]}</component_props>
+        <h>12</h>
+        <name>Budget allocation and spending by event</name>
+        <stored_component display_value="Budget allocation and spending by event">5b3c450a83c0e2109befcc65eeaad37b</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 07:31:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b35cc50a83c0e2109befcc65eeaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Budget allocation and spending by event</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>par_dashboard_widget_b35cc50a83c0e2109befcc65eeaad3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 09:47:49</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>12</x>
+        <y>14</y>
+    </par_dashboard_widget>
+</record_update>
