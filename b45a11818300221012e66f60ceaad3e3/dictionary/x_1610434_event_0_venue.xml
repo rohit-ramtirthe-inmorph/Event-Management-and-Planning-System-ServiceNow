@@ -5,6 +5,14 @@
         <element label="Venue Name" mandatory="true" max_length="40" name="venue_name" type="string"/>
         <element label="Capacity" mandatory="true" max_length="40" name="capacity" type="integer"/>
         <element label="Contact Person" mandatory="true" max_length="40" name="contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Availability" max_length="40" name="availability" type="boolean"/>
     </element>
 </database>

@@ -77,18 +77,37 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Completed</label>
+            <label>Confirmed</label>
             <language>en</language>
             <name>x_1610434_event_0_event_record</name>
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 18:52:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 18:53:37</sys_updated_on>
+            <value>confirmed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Completed</label>
+            <language>en</language>
+            <name>x_1610434_event_0_event_record</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-03-01 08:08:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 08:08:12</sys_updated_on>
+            <sys_updated_on>2025-03-03 18:53:42</sys_updated_on>
             <value>completed</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -99,15 +118,15 @@
             <label>Cancelled</label>
             <language>en</language>
             <name>x_1610434_event_0_event_record</name>
-            <sequence>4</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-03-01 08:08:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-01 08:08:12</sys_updated_on>
+            <sys_updated_on>2025-03-03 18:52:54</sys_updated_on>
             <value>cancelled</value>
         </sys_choice>
     </sys_choice>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla">
+    <contract_sla action="DELETE">
+        <active>true</active>
+        <adv_condition_type>none</adv_condition_type>
+        <cancel_condition/>
+        <collection>x_1610434_event_0_venue</collection>
+        <condition_class/>
+        <duration>1970-01-03 00:00:00</duration>
+        <duration_type/>
+        <enable_logging>false</enable_logging>
+        <flow display_value="Default SLA flow">828f267973333300e289235f04f6a7a3</flow>
+        <name>Venue Booking Requests SLA</name>
+        <pause_condition/>
+        <relative_duration_works_on>Task record</relative_duration_works_on>
+        <reset_action>cancel</reset_action>
+        <reset_condition/>
+        <resume_condition/>
+        <retroactive>false</retroactive>
+        <retroactive_pause>true</retroactive_pause>
+        <schedule display_value="24 x 7">38fa64edc0a8016400f4a5724b0434b8</schedule>
+        <schedule_source>sla_definition</schedule_source>
+        <schedule_source_field/>
+        <set_start_to/>
+        <start_condition/>
+        <stop_condition/>
+        <sys_class_name>contract_sla</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:29:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e1722bd830c621012e66f60ceaad352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Venue Booking Requests SLA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_update_name>contract_sla_5e1722bd830c621012e66f60ceaad352</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:31:06</sys_updated_on>
+        <target>response</target>
+        <timezone/>
+        <timezone_source>task.caller_id.time_zone</timezone_source>
+        <type>SLA</type>
+        <vendor/>
+        <when_to_cancel>on_condition</when_to_cancel>
+        <when_to_resume>on_condition</when_to_resume>
+        <workflow/>
+    </contract_sla>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</application>
+        <file_path/>
+        <instance_id>182a6b961b0ec294168f4089bd4bcba9</instance_id>
+        <instance_name>dev267515</instance_name>
+        <name>contract_sla_5e1722bd830c621012e66f60ceaad352</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla"><contract_sla action="INSERT_OR_UPDATE"><active>true</active><adv_condition_type>none</adv_condition_type><cancel_condition/><collection>x_1610434_event_0_venue</collection><condition_class/><duration>1970-01-03 00:00:00</duration><duration_type/><enable_logging>false</enable_logging><flow display_value="Default SLA flow">828f267973333300e289235f04f6a7a3</flow><name>Venue Booking Requests SLA</name><pause_condition/><relative_duration_works_on>Task record</relative_duration_works_on><reset_action>cancel</reset_action><reset_condition/><resume_condition/><retroactive>false</retroactive><retroactive_pause>true</retroactive_pause><schedule display_value="24 x 7">38fa64edc0a8016400f4a5724b0434b8</schedule><schedule_source>sla_definition</schedule_source><schedule_source_field/><set_start_to/><start_condition/><stop_condition/><sys_class_name>contract_sla</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 19:29:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5e1722bd830c621012e66f60ceaad352</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Venue Booking Requests SLA</sys_name><sys_overrides/><sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package><sys_policy/><sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope><sys_update_name>contract_sla_5e1722bd830c621012e66f60ceaad352</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 19:31:06</sys_updated_on><target>response</target><timezone/><timezone_source>task.caller_id.time_zone</timezone_source><type>SLA</type><vendor/><when_to_cancel>on_condition</when_to_cancel><when_to_resume>on_condition</when_to_resume><workflow/></contract_sla></record_update>]]></payload>
+        <payload_hash>1919228006</payload_hash>
+        <record_name>Venue Booking Requests SLA</record_name>
+        <reverted_from/>
+        <source>cc2912b1830c621012e66f60ceaad313</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:31:06</sys_created_on>
+        <sys_id>0f77aa35834c621012e66f60ceaad3ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955d7d97b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:31:06</sys_updated_on>
+        <type>SLA Definition</type>
+        <update_guid>0377aa35154c6210fd4dc66a54cac6ff</update_guid>
+        <update_guid_history>0377aa35154c6210fd4dc66a54cac6ff:1919228006,5e1722bd3f0c6210458968157602de54:-1507827102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Venue Booking Requests SLA">289e65de838ce21012e66f60ceaad357</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 04:39:25</sys_created_on>
+        <sys_db_object display_value="" name="contract_sla">contract_sla</sys_db_object>
+        <sys_id>13366f5c73b54470a507d6611efdd040</sys_id>
+        <sys_metadata>5e1722bd830c621012e66f60ceaad352</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Venue Booking Requests SLA</sys_name>
+        <sys_package display_value="Event Management and Planning System" source="x_1610434_event_0">b45a11818300221012e66f60ceaad3e3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management and Planning System">b45a11818300221012e66f60ceaad3e3</sys_scope>
+        <sys_scope_delete display_value="">3c069feccaf84bf38ee640628355c471</sys_scope_delete>
+        <sys_update_name>contract_sla_5e1722bd830c621012e66f60ceaad352</sys_update_name>
+        <sys_update_version display_value="contract_sla_5e1722bd830c621012e66f60ceaad352">0f77aa35834c621012e66f60ceaad3ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 04:39:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
